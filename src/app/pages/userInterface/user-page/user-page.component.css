@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    color: hsl(0, 100%, 50%);
+    background-color: rgba(249, 249, 228, 0.886);
+}
+
+
+
+.card-body{
+    background-color: #8bb8d07b;
+    text-align: center !important;
+}

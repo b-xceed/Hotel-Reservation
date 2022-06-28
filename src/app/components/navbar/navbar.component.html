@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <a routerLink="/"
+   mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+</a>
+  <span>Hotel Reservation Services</span>
+  <span class="example-spacer"></span>
+
+  <a  *ngIf="login.userLogin()" routerLink="/register"
+   mat-icon-button class=" " aria-label="Example icon-button with heart icon">
+   <button class="register "> Register </button>
+</a>
+
+  <a *ngIf="login.userLogin()" routerLink="/login"
+   mat-icon-button class=" mr25" aria-label="Example icon-button with heart icon">
+   <button class="login "> Login </button>
+    
+</a>
+<a *ngIf="login.userLogin()" routerLink="/"
+   mat-icon-button class=" mr25" aria-label="Example icon-button with heart icon">
+   <button class="logout"> Logout </button>
+    
+</a>
+</mat-toolbar>
